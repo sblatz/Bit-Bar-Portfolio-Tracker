@@ -1,0 +1,7 @@
+# Installation
+
+In order to use this plugin, you must download and install [BitBar](https://getbitbar.com/), which lets you put the output from any program in your MacOS menu bar. BitBar will ask you to set up a plugins folder. After doing so, simply drag the .py file into the proper directory. If you are having issues with it running, try running `chmod +x portfolio-tracker.py` in the directory it's located in, and refreshing BitBar. 
+
+# Usage
+
+Using Portfolio Tracker is easy! Simply edit line 18 of the python file with your favorite text editor to include the stocks (in symbol format) that you own, as well as the amount owned. An example is included in the file: `portfolio = {'APPL': 10, 'NFLX': 3, 'AMZN': 1}`.
