@@ -1,5 +1,5 @@
 # Portfolio Tracker
-Portfolio tracker is a plugin for BitBar that lets you easily see your gains or losses for the day in your menu bar. Clicking on the menu bar item will also give you a breakdown of how each of your stocks is performing, as seen here: ![portfolio tracker screenshot](https://i.imgur.com/tbNKChl.png)
+Portfolio Tracker is a plugin for BitBar that lets you easily see your gains or losses for the day in your menu bar. Clicking on the menu bar item will also give you a breakdown of how each of your stocks is performing, as seen here: ![portfolio tracker screenshot](https://i.imgur.com/tbNKChl.png)
 
 
 
