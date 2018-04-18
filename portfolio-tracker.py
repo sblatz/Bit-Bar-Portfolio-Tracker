@@ -13,9 +13,7 @@ import json, urllib2, re
 
 portfolioValue = 0.0
 amountGained = 0.0
-
-#Enter your stock portfolio below!
-portfolio = {'APPL': 10, 'NFLX': 3, 'AMZN': 1}
+portfolio = {'SPY': 37, 'ZNGA': 1}
 
 def get_stock_price(stock):
 	response = urllib2.urlopen('https://api.iextrading.com/1.0/stock/' + stock + '/quote')
@@ -45,8 +43,10 @@ portfolioPercentGained = (round((amountGained / portfolioValue) * 100, 2))
 finalColor = "red" if amountGained < 0 else "green"
 symbol = "-$" if amountGained < 0 else "+$"
 
+#ensure negative sign isn't shown twice
+amountGained = abs(amountGained)
 #bitbar output
-print symbol + str(round(amountGained,2)) + " | color=" + finalColor 
+print symbol + str(format(round(amountGained,2), ',.2f')) + " | color=" + finalColor
 print "---"
 print("Portfolio - $" + str(format(portfolioValue,',.2f')) + " (" + str(format(portfolioPercentGained,',.2f')) + "%)" + " | color=" + finalColor)
 
